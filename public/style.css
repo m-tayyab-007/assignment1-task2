@@ -12,9 +12,23 @@ body {
       height: 180px;
  }
 
+ #title {
+   margin-bottom: 1%;
+ }
+ 
+
  .footerr{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
  }
+
+ nav {
+  background-color: green;
+  
+}
+
+.page-footer {
+  background-color: green;
+}

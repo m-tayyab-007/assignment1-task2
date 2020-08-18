@@ -21,6 +21,11 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 </head>
 
 <body>
@@ -34,10 +39,22 @@
             </ul>
         </div>
     </nav>
+
     <div class="container">
         <!-- Page Content goes here -->
 
-        <h3>Melbourne</h3>
+        <h3 id="title">Melbourne</h3>
+        <nav id="title">
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons"></i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
         <div id="mapid"></div>
 
 
@@ -56,17 +73,17 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.</p>
+                    <h5 class="white-text">Uber</h5>
+                    <p class="grey-text text-lighten-4">Good things happen when people can move, whether across town or
+                        towards their dreams. Opportunities appear, open up, become reality.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Company</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Products</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Global citizenship</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Innovation</a></li>
                     </ul>
                 </div>
             </div>

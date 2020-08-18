@@ -13,10 +13,18 @@ $(document).ready(function () {
 
     L.marker([-37.7, 144.5]).addTo(mymap)
         .bindPopup('Driver');
-        
+
 
     L.marker([-37.8, 144.5]).addTo(mymap)
         .bindPopup('Driver');
-        
+
+
+    L.Routing.control({
+        waypoints: [
+            L.latLng(-37.7, 145),
+            L.latLng(-37.7, 144.5)
+        ]
+    }).addTo(mymap);
+
 
 })
