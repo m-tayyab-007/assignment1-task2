@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  #mapid { 
+      height: 180px;
+ }
+
+ .footerr{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }
